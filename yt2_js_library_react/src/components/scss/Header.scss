@@ -1,0 +1,47 @@
+// src/components/Header.scss
+@import '../scss/variables';
+@import '../scss/includes';
+@import '../scss/extend';
+
+.header {
+	display: flex;
+	@include flex-between ();
+  @include container ();
+  @extend %text-center;
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: $spacing;
+	
+	.header-titles {
+		display: flex;
+		flex-direction: row;
+	}
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  nav ul {
+    @include flex-between ();
+    list-style: none;
+
+    li {
+      margin: 0 $spacing;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: lighten($primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .contact-btn {
+    @include button-style($accent-color, $secondary-color);
+  }
+}

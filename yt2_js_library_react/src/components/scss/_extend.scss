@@ -1,0 +1,10 @@
+body {
+  font-family: $font-family;
+  background-color: $accent-color;
+  margin: 0;
+  padding: 0;
+}
+
+%text-center {
+  text-align: center;
+}
