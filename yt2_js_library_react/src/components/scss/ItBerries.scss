@@ -1,0 +1,57 @@
+@import '../scss/variables';
+@import '../scss/includes';
+@import '../scss/extend';
+
+.section2 {
+
+	width: auto;
+	background-color: #1d1d1d;
+	background-image: url(../../assets/images/ITberriesBanner/logoITB.svg);
+
+	@include background-image();
+
+	background-position-x: right;
+	background-position-y: center;
+	background-size: 450px 475.27px;
+	color: white;
+	margin-top: 0px;
+
+
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		letter-spacing: 18.54%;
+		margin-left: 72px;
+		padding-top: 50px;
+	}
+
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		text-align: justify;
+		margin-left: 72px;
+		margin-top: 8px;
+		width: 60.5%;
+		height: 89px;
+	}
+
+	.invisibleButton {
+		margin-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.readButton {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		border-right: 2px solid white;
+		border-left: 2px solid white;
+		color: white;
+		margin-left: 72px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

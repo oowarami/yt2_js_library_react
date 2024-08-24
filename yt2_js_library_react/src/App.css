@@ -1,28 +1,29 @@
 /* General Reset */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Body Styles */
 body {
   font-family: 'Arial, sans-serif';
-  background-color: #f9f9f9;
+  background-color: #D7D7D7;
   color: #000;
 }
 
 /* Main Container */
 .container {
-  min-width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 20px;
 }
 
 /* Layout Styles */
-/* header, .hero, .about, .skills, .portfolio, .contact, footer {
+header, .hero, .about, .skills, .portfolio, .contact, footer {
   margin-bottom: 50px;
-} */
+}
 
 /* Text Alignment */
 .text-center {

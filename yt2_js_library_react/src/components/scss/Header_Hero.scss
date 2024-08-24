@@ -1,0 +1,154 @@
+@import '../scss/variables';
+@import '../scss/includes';
+@import '../scss/extend';
+
+.section1 {
+	background-image: url(../../assets/images/hero/Rectangle67.png);
+	@include background-image();
+
+	background-size: 66vw 100%;
+	background-position: bottom right;
+	padding-right: 8rem;
+	padding-left: 8rem;
+	padding-top: 32px;
+
+	.header {
+		display: flex;
+		@include flex-between();
+
+		@extend %text-center;
+		color: $primary-color;
+		padding: $spacing;
+
+		.menu  {
+			display: none;
+		}
+
+		nav ul {
+			list-style: none;
+			gap: 50px;
+			flex-wrap: wrap;
+
+			li.links {
+				@include flex-between();
+				margin: 0 $spacing;
+				gap: 50px;
+			}
+			a {
+				color: $primary-color;
+				text-decoration: none;
+				transition: color 0.3s;
+				@include header-font();
+				line-height: 20.72px;
+
+				&:hover {
+					color: lighten($primary-color, 10%);
+				}
+			}
+		}
+
+		.contact-btn {
+			@include button-style($accent-color, $secondary-color);
+			@include header-font();
+			line-height: 20.72px;
+			text-wrap: nowrap;
+			padding: 8px 20px;
+			justify-content: center;
+		}
+	}
+
+  // hero
+	.hero {
+		@include flex-between();
+		padding: 2 * $spacing;
+		@include container();
+
+		.hero-text {
+			padding: $spacing;
+			h2 {
+				font-size: 2.5em;
+				margin-bottom: $spacing / 2;
+			}
+
+			h4 {
+				font-size: 1.5em;
+			}
+
+			p {
+				font-size: 1.2em;
+				color: $accent-color2;
+			}
+		}
+
+		.social-icons {
+			display: flex;
+			gap: 31px;
+			margin-top: 126px;
+			margin-bottom: 12.5vh;
+		}
+
+		.hero-image {
+			@include flex-center();
+			padding-right: 0px;
+
+			span {
+				color: $secondary-color;
+				position: absolute;
+				bottom: 0;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+// mobile header and hero
+@media screen and (max-width: 900px) {
+	.section1 {
+		background-image: url(../assets/images/hero/Background.png);
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 0;
+
+		@include background-image();
+    background-size: contain;
+
+		li.links {
+			@include hide();
+		}
+
+		.menu {
+			@include show();
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.menu-icon {
+			@include show();
+      padding-right: 5rem;
+		}
+
+		.header {
+			background-color: $secondary-color;
+		}
+
+		.dropdown-content {
+      @include hide ();
+		}
+
+    .social-icons {
+      @include flex-center();
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .hero-image {
+      // @include hide ();
+      display: none;
+    }
+	}
+
+
+
+}

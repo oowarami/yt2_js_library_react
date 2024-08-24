@@ -1,0 +1,75 @@
+@import '../scss/variables';
+@import '../scss/includes';
+@import '../scss/extend';
+
+/* .contact {
+	display: flex;
+	flex-direction: column;
+	
+} */
+
+.contact .contactDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact h2 {
+	font-family: 'Montserrat', sans-serif;
+	border: 6px solid black;
+	padding: 20px 80.9px 20px 79.25px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+.contact p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+.contact .contactForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 123px;
+	margin-left: 25px;
+	row-gap: 13px;
+}
+.contact .contactForm input {
+	border-left: 2px black solid;
+	border-bottom: 2px black solid;
+	color: #8b8b8b;
+	width: 510px;
+	height: 60px;
+	top: 556px;
+	left: 654px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+	letter-spacing: 4%;
+}
+
+.contact .contactForm input .contactMessage {
+	height: 184px;
+}
+
+/* Separator */
+.separatorBlack3 {
+	margin-top: 75px;
+	margin-left: 46.25vw;
+	text-align: center;
+}
+
+/* Mobile view for separator 3 */
+@media screen and (max-width: 900px) {
+	.separatorBlack3 {
+		margin-left: unset;
+		margin-top: auto;
+		width: 80%;
+	}
+}

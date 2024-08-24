@@ -1,0 +1,79 @@
+@import '../scss/variables';
+@import '../scss/includes';
+@import '../scss/extend';
+
+.skills {
+	width: auto;
+	min-height: 373px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.skills .skillsDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills h2 {
+	font-family: 'Montserrat', sans-serif;
+	border: 6px solid black;
+	padding: 20px 80.9px 20px 79.25px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+.usingNow {
+	display: grid;
+	gap: 20px;
+	padding: 20px;
+	grid-row-gap: 80px;
+}
+
+.usingNowDiv,
+.learningDiv,
+.otherDiv {
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.usingNowText,
+.learningText,
+.otherText {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 18.54%;
+	margin-left: 240px;
+	padding-top: 50px;
+}
+
+.skills .usingNow .usingNowDiv {
+	margin-bottom: 5px;
+}
+
+.row1,
+.row2 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 70vw;
+	justify-items: center;
+	margin-left: 180px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card span {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 13.54%;
+	text-align: center;
+	margin-top: 15px;
+}

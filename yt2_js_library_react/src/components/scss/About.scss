@@ -1,0 +1,154 @@
+@import '../scss/variables';
+@import '../scss/includes';
+@import '../scss/extend';
+
+.section3 {
+	padding-left: 15rem;
+	padding-right: 15rem;
+	@include container();
+
+	.aboutMe {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.aboutMeDiv {
+	@include flex-center ();
+	flex-direction: column;
+	}
+
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		border: 6px solid black;
+		padding: 20px 80.9px 20px 79.25px;
+		margin-top: 80px;
+		margin-left: 100px;
+	}
+
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		text-align: center;
+		margin-top: 50px;
+		margin-left: 200px;
+	}
+
+	.invisibleButton2 {
+		margin-top: 20px;
+		@include flex-center();
+	}
+
+	.exploreButton {
+
+		font-family: 'Montserrat', sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		border-right: 2px solid black;
+		border-left: 2px solid black;
+		color: black;
+		margin-left: 102px;
+		padding: 5px 15px 10px 15px;
+	}
+
+	.separatorBlack1 {
+		margin-top: 75px;
+		margin-left: 100px;
+		text-align: center;
+	}
+
+		.services {
+			margin-top: 108px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			margin-left: 80px;
+			margin-right: 80px;
+
+			.line1 {
+				display: flex;
+			}
+
+			.design {
+				width: 510px;
+				height: 177px;
+				margin-right: 5px;
+
+				img {
+					width: 61px;
+					height: 64px;
+				}
+
+				h6 {
+					font-family: 'Montserrat', sans-serif;
+					font-weight: 700;
+					letter-spacing: 18.54%;
+					font-size: 22px;
+					margin-left: 45px;
+					margin-top: -70px;
+				}
+
+				p {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 14px;
+					font-weight: 400;
+					text-align: justify;
+			}
+		}
+
+		.development {
+			width: 510px;
+			height: 178px;
+			margin-left: 120px;
+
+			img {
+				width: 68.94px;
+				height: 70px;
+			}
+
+			h6 {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				letter-spacing: 18.54%;
+				font-size: 22px;
+				margin-left: 45px;
+				margin-top: -70px;
+	}
+
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: justify;
+	}
+	
+		}
+
+		.maintenance {
+			width: 487px;
+			height: 182px;
+			margin: auto;
+
+			img {
+				width: 80.21px;
+				height: 64px;
+			}
+
+			h6 {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				letter-spacing: 18.54%;
+				font-size: 22px;
+				margin-left: 50px;
+				margin-top: -60px;
+			}
+
+			p {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				font-weight: 400;
+				text-align: justify;
+			}
+		}
+	}
+}
